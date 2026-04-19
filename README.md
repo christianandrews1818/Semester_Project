@@ -1,14 +1,23 @@
-# Semester Project – IT & Cybersecurity Resource Hub
+# IT & Cybersecurity Resource Hub
 
-## Project Purpose
-The purpose of this project is to create a website that provides beginner-friendly resources for learning IT fundamentals and cybersecurity concepts. The site will help users understand topics like networking, security basics, certifications (such as CompTIA), and real-world applications.
+## What Is This?
 
-## Target Audience
-The target audience includes students, entry-level IT learners, and individuals interested in pursuing a career in cybersecurity or information technology. This includes college students, military personnel transitioning into IT roles, and beginners preparing for certifications.
+This is a beginner-friendly educational website focused on teaching foundational concepts in information technology and cybersecurity. The project includes multiple pages covering IT fundamentals, cybersecurity basics, and helpful learning resources. It is designed to be simple, clear, and easy to navigate for new learners.
 
-## Project Description
-This website will serve as a central hub for learning IT concepts, offering organized content, simple explanations, and helpful resources. It will include sections such as study guides, tools, and possibly interactive features like quizzes or checklists.
+## Why Does It Exist?
 
-## Scope (P01 vs P02)
-For Project 01, the site will include a working homepage, basic navigation, and core content sections.  
-For Project 02, the site will be expanded with additional features such as improved design, more content, and interactive elements.
+This project exists to provide an organized and accessible learning hub for students, entry-level IT learners, and individuals interested in cybersecurity careers. Many beginners struggle to find clear explanations online, so this site helps simplify technical topics into understandable content. It also serves as a practical portfolio project demonstrating web development skills.
+
+## What Tools Did I Use?
+
+- **Visual Studio Code** – Used as the primary code editor because it is lightweight, reliable, and widely used in web development.
+- **HTML** – Used to build the structure and content of each webpage.
+- **CSS** – Used to style the website and create a consistent layout across pages.
+- **JavaScript** – Used to add interactivity through the dark mode toggle feature.
+- **GitHub Desktop** – Used to manage commits, version control, and pushing updates.
+- **GitHub Pages** – Used to host and deploy the live website.
+- **ChatGPT** – Used for troubleshooting, refining code, and improving workflow efficiency.
+
+## How to Visit It
+
+[View the Live Project](https://christianandrews1818.github.io/Semester_Project/)
