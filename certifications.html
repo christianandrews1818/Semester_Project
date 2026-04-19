@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Certifications</h1>
+      <p>Entry-level certifications that can help build your IT and cybersecurity career.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fundamentals.html">IT Fundamentals</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity Basics</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+      </ul>
+      <button id="theme-toggle">Toggle Dark Mode</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>CompTIA A+</h2>
+        <p>
+          CompTIA A+ is a common starting point for IT beginners. It covers hardware, software,
+          troubleshooting, mobile devices, and basic networking. It is often recommended for people
+          interested in help desk or technical support roles.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CompTIA Network+</h2>
+        <p>
+          Network+ focuses on networking concepts such as protocols, routing, switching, cabling,
+          and network troubleshooting. This certification is useful for learners who want a stronger
+          understanding of how devices communicate.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>CompTIA Security+</h2>
+        <p>
+          Security+ introduces foundational cybersecurity concepts, including threats, vulnerabilities,
+          risk management, identity management, and network security. It is one of the most recognized
+          beginner cybersecurity certifications.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Cisco CCNA</h2>
+        <p>
+          The Cisco Certified Network Associate (CCNA) focuses on networking, routing, switching,
+          security basics, and network automation. It is more advanced than beginner-level
+          certifications but is highly respected in networking roles.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>How to Choose a Certification</h2>
+        <p>
+          The best certification depends on your goals. If you want to start in general IT support,
+          A+ is a strong first step. If you are interested in networking, Network+ or CCNA may be a
+          better fit. If cybersecurity is your focus, Security+ is a common starting point.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Study Advice</h2>
+        <p>
+          Certification study is most effective when combined with hands-on practice. Reading, watching
+          videos, using flashcards, and building home labs can all help reinforce learning. Consistency
+          matters more than trying to study everything at once.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Created for my semester project.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById("theme-toggle");
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+</body>
+</html>
