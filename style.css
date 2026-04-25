@@ -201,3 +201,17 @@ body.dark-mode .search-box {
   color: #e5e7eb;
   border-color: #93c5fd;
 }
+.search-box {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+body.dark-mode .search-box {
+  background-color: #111827;
+  color: #e5e7eb;
+  border-color: #93c5fd;
+}
