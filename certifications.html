@@ -30,77 +30,140 @@
   <main>
     <div class="container">
 
-      <!-- SEARCH -->
       <section class="card">
-        <h2>Search Certifications</h2>
-        <p>Search by certification name (A+, Security+, CCNA, AWS, etc.)</p>
+        <h2>Find Certifications</h2>
+        <p>
+          Search like Ctrl+F or filter by level and category to find certifications that match your goals.
+        </p>
+
         <input 
           type="text" 
           id="searchInput" 
-          placeholder="Search certifications..." 
+          placeholder="Search by name, keyword, or topic..." 
           class="search-box"
         >
+
+        <div class="filter-row">
+          <div>
+            <label for="levelFilter">Level</label>
+            <select id="levelFilter" class="filter-select">
+              <option value="all">All Levels</option>
+              <option value="beginner">Beginner</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="all">All Categories</option>
+              <option value="support">IT Support</option>
+              <option value="networking">Networking</option>
+              <option value="security">Security</option>
+              <option value="cloud">Cloud</option>
+              <option value="linux">Linux</option>
+            </select>
+          </div>
+        </div>
       </section>
 
-      <!-- CERTIFICATIONS -->
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="support">
         <h2>CompTIA A+</h2>
-        <p>Entry-level certification covering hardware, software, and troubleshooting.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">IT Support</span>
+        </div>
+        <p>Entry-level certification covering hardware, software, troubleshooting, and basic IT support skills.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="networking">
         <h2>CompTIA Network+</h2>
-        <p>Covers networking concepts like routing, switching, and connectivity.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Networking</span>
+        </div>
+        <p>Covers networking concepts like routing, switching, cabling, connectivity, and troubleshooting.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="security">
         <h2>CompTIA Security+</h2>
-        <p>Focuses on cybersecurity fundamentals, threats, and risk management.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Security</span>
+        </div>
+        <p>Focuses on cybersecurity fundamentals, threats, vulnerabilities, risk management, and security operations.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="advanced" data-category="networking">
         <h2>Cisco CCNA</h2>
-        <p>Advanced networking certification covering routing, switching, and automation.</p>
+        <div class="tag-row">
+          <span class="tag">Advanced</span>
+          <span class="tag">Networking</span>
+        </div>
+        <p>Advanced networking certification covering routing, switching, IP services, security basics, and automation.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="advanced" data-category="linux">
         <h2>CompTIA Linux+</h2>
-        <p>Focuses on Linux system administration and command-line skills.</p>
+        <div class="tag-row">
+          <span class="tag">Advanced</span>
+          <span class="tag">Linux</span>
+        </div>
+        <p>Focuses on Linux system administration, command-line skills, permissions, troubleshooting, and security.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="cloud">
         <h2>Microsoft Azure Fundamentals</h2>
-        <p>Introduces cloud computing and Microsoft Azure services.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Cloud</span>
+        </div>
+        <p>Introduces cloud computing, Microsoft Azure services, pricing, identity, security, and cloud concepts.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="cloud">
         <h2>AWS Certified Cloud Practitioner</h2>
-        <p>Entry-level certification covering AWS cloud concepts and services.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Cloud</span>
+        </div>
+        <p>Entry-level certification covering AWS cloud concepts, services, pricing, security, and support.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="security">
         <h2>ISC2 Certified in Cybersecurity</h2>
-        <p>Entry-level certification focused on cybersecurity principles and operations.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Security</span>
+        </div>
+        <p>Entry-level certification focused on cybersecurity principles, access control, incident response, and operations.</p>
       </section>
 
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="support">
         <h2>Google IT Support Professional Certificate</h2>
-        <p>Beginner-friendly program covering troubleshooting, networking, and support skills.</p>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">IT Support</span>
+        </div>
+        <p>Beginner-friendly program covering troubleshooting, customer support, networking, operating systems, and security.</p>
       </section>
 
-      <!-- PATH -->
-      <section class="card cert-item">
+      <section class="card cert-item" data-level="beginner" data-category="security">
         <h2>Recommended Beginner Path</h2>
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Security</span>
+          <span class="tag">IT Support</span>
+        </div>
         <p>
           Start with A+ or Google IT Support, move to Network+, then Security+. Add cloud certifications
           like AWS or Azure depending on your career goals.
         </p>
       </section>
 
-      <!-- NO RESULTS -->
       <section id="noResults" class="card" style="display:none;">
         <h2>No Results Found</h2>
-        <p>Try searching A+, Security+, Network+, CCNA, AWS, or Azure.</p>
+        <p>Try changing your search term, level, or category filter.</p>
       </section>
 
     </div>
@@ -112,7 +175,6 @@
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script>
     const toggleButton = document.getElementById("theme-toggle");
 
@@ -130,32 +192,41 @@
       }
     });
 
-    // 🔥 SEARCH BY TITLE ONLY
     const searchInput = document.getElementById("searchInput");
+    const levelFilter = document.getElementById("levelFilter");
+    const categoryFilter = document.getElementById("categoryFilter");
     const certItems = document.querySelectorAll(".cert-item");
     const noResults = document.getElementById("noResults");
 
-    searchInput.addEventListener("keyup", function () {
-      const filter = searchInput.value.toLowerCase();
-      let visible = 0;
+    function filterCertifications() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedLevel = levelFilter.value;
+      const selectedCategory = categoryFilter.value;
+      let visibleCount = 0;
 
       certItems.forEach(item => {
-        const title = item.querySelector("h2").textContent.toLowerCase();
+        const text = item.textContent.toLowerCase();
+        const itemLevel = item.getAttribute("data-level");
+        const itemCategory = item.getAttribute("data-category");
 
-        if (title.includes(filter)) {
+        const matchesSearch = text.includes(searchTerm);
+        const matchesLevel = selectedLevel === "all" || itemLevel === selectedLevel;
+        const matchesCategory = selectedCategory === "all" || itemCategory === selectedCategory;
+
+        if (matchesSearch && matchesLevel && matchesCategory) {
           item.style.display = "block";
-          visible++;
+          visibleCount++;
         } else {
           item.style.display = "none";
         }
       });
 
-      if (visible === 0) {
-        noResults.style.display = "block";
-      } else {
-        noResults.style.display = "none";
-      }
-    });
+      noResults.style.display = visibleCount === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", filterCertifications);
+    levelFilter.addEventListener("change", filterCertifications);
+    categoryFilter.addEventListener("change", filterCertifications);
   </script>
 
 </body>
