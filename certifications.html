@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <div class="container">
       <h1>Certifications</h1>
@@ -28,59 +29,46 @@
 
   <main>
     <div class="container">
+
+      <!-- 🔥 SEARCH FEATURE -->
       <section class="card">
+        <h2>Search Certifications</h2>
+        <p>Type to filter certifications instantly.</p>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search certifications..." 
+          class="search-box"
+        >
+      </section>
+
+      <!-- CERT ITEMS -->
+      <section class="card cert-item">
         <h2>CompTIA A+</h2>
-        <p>
-          CompTIA A+ is a common starting point for IT beginners. It covers hardware, software,
-          troubleshooting, mobile devices, and basic networking. It is often recommended for people
-          interested in help desk or technical support roles.
-        </p>
+        <p>Entry-level certification covering hardware, software, and troubleshooting.</p>
       </section>
 
-      <section class="card">
+      <section class="card cert-item">
         <h2>CompTIA Network+</h2>
-        <p>
-          Network+ focuses on networking concepts such as protocols, routing, switching, cabling,
-          and network troubleshooting. This certification is useful for learners who want a stronger
-          understanding of how devices communicate.
-        </p>
+        <p>Covers networking concepts like routing, switching, and connectivity.</p>
       </section>
 
-      <section class="card">
+      <section class="card cert-item">
         <h2>CompTIA Security+</h2>
-        <p>
-          Security+ introduces foundational cybersecurity concepts, including threats, vulnerabilities,
-          risk management, identity management, and network security. It is one of the most recognized
-          beginner cybersecurity certifications.
-        </p>
+        <p>Focuses on cybersecurity fundamentals, threats, and risk management.</p>
       </section>
 
-      <section class="card">
+      <section class="card cert-item">
         <h2>Cisco CCNA</h2>
-        <p>
-          The Cisco Certified Network Associate (CCNA) focuses on networking, routing, switching,
-          security basics, and network automation. It is more advanced than beginner-level
-          certifications but is highly respected in networking roles.
-        </p>
+        <p>Advanced networking certification covering routing, switching, and automation.</p>
       </section>
 
-      <section class="card">
-        <h2>How to Choose a Certification</h2>
-        <p>
-          The best certification depends on your goals. If you want to start in general IT support,
-          A+ is a strong first step. If you are interested in networking, Network+ or CCNA may be a
-          better fit. If cybersecurity is your focus, Security+ is a common starting point.
-        </p>
+      <!-- OPTIONAL MESSAGE -->
+      <section id="noResults" class="card" style="display:none;">
+        <h2>No Results Found</h2>
+        <p>Try searching "security", "network", or "ccna".</p>
       </section>
 
-      <section class="card">
-        <h2>Study Advice</h2>
-        <p>
-          Certification study is most effective when combined with hands-on practice. Reading, watching
-          videos, using flashcards, and building home labs can all help reinforce learning. Consistency
-          matters more than trying to study everything at once.
-        </p>
-      </section>
     </div>
   </main>
 
@@ -90,6 +78,7 @@
     </div>
   </footer>
 
+  <!-- 🔥 SCRIPT -->
   <script>
     const toggleButton = document.getElementById("theme-toggle");
 
@@ -106,6 +95,34 @@
         localStorage.setItem("theme", "light");
       }
     });
+
+    // 🔥 SEARCH FUNCTION
+    const searchInput = document.getElementById("searchInput");
+    const certItems = document.querySelectorAll(".cert-item");
+    const noResults = document.getElementById("noResults");
+
+    searchInput.addEventListener("keyup", function () {
+      const filter = searchInput.value.toLowerCase();
+      let visible = 0;
+
+      certItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+
+        if (text.includes(filter)) {
+          item.style.display = "block";
+          visible++;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      if (visible === 0) {
+        noResults.style.display = "block";
+      } else {
+        noResults.style.display = "none";
+      }
+    });
   </script>
+
 </body>
 </html>
