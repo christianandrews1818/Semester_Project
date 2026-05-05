@@ -319,3 +319,22 @@ body.dark-mode .tag {
     padding: 20px;
   }
 }
+.hero-with-image {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
