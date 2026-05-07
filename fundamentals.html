@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IT Fundamentals</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <div class="container">
       <h1>IT Fundamentals</h1>
@@ -18,7 +19,7 @@
     <div class="container nav-container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="fundamentals.html">IT Fundamentals</a></li>
+        <li><a href="fundamentals.html" class="active">IT Fundamentals</a></li>
         <li><a href="cybersecurity.html">Cybersecurity Basics</a></li>
         <li><a href="certifications.html">Certifications</a></li>
       </ul>
@@ -28,12 +29,31 @@
 
   <main>
     <div class="container">
+
+      <!-- HERO -->
+      <section class="hero hero-with-image">
+        <div class="hero-text">
+          <h2>Building a Strong IT Foundation</h2>
+          <p>
+            Information Technology is the foundation of modern business, communication, education,
+            security, and daily life. Before moving into advanced topics like cybersecurity or cloud
+            computing, beginners should understand the basics of hardware, software, networking,
+            operating systems, and troubleshooting.
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/it.jpg" alt="Information technology workspace">
+        </div>
+      </section>
+
       <section class="card">
         <h2>Hardware</h2>
         <p>
           Hardware includes the physical parts of a computer system, such as the motherboard,
-          processor, memory, storage drives, monitors, and peripherals. Understanding hardware
-          helps learners see how computer systems are built and maintained.
+          processor, memory, storage drives, monitors, keyboards, printers, and other peripherals.
+          Understanding hardware helps learners see how computer systems are built, upgraded,
+          repaired, and maintained.
         </p>
       </section>
 
@@ -41,17 +61,21 @@
         <h2>Software</h2>
         <p>
           Software includes operating systems, applications, and utilities that allow users and
-          systems to perform tasks. This includes programs like web browsers, office tools,
-          antivirus software, and system management tools.
+          systems to perform tasks. Examples include web browsers, office tools, antivirus software,
+          system management tools, and mobile applications. Software works with hardware to make
+          computers useful.
         </p>
       </section>
 
       <section class="card">
         <h2>Networking</h2>
+        <img src="images/network.jpg" alt="Networking equipment" class="section-img">
+
         <p>
           Networking connects devices so they can communicate and share resources. Important concepts
           include IP addresses, routers, switches, wireless access points, and internet connectivity.
-          Networking is one of the most important areas for anyone entering IT.
+          Networking is one of the most important areas for anyone entering IT because nearly every
+          modern system depends on reliable communication.
         </p>
       </section>
 
@@ -59,8 +83,9 @@
         <h2>Operating Systems</h2>
         <p>
           An operating system manages a computer’s hardware and software resources. Common examples
-          include Windows, macOS, and Linux. Learning the basics of operating systems helps users
-          understand how files, settings, security, and applications are managed.
+          include Windows, macOS, Linux, Android, and iOS. Learning operating system basics helps
+          users understand files, settings, user accounts, permissions, updates, security, and
+          applications.
         </p>
       </section>
 
@@ -68,25 +93,46 @@
         <h2>Basic Troubleshooting</h2>
         <p>
           Troubleshooting is the process of identifying, diagnosing, and resolving technical issues.
-          Common troubleshooting steps include checking connections, restarting systems, reviewing
-          error messages, and isolating the root cause of a problem.
+          A strong troubleshooter does not just guess. They gather information, test possible causes,
+          and confirm whether the solution actually worked.
         </p>
+
+        <ul class="clean-list">
+          <li>Identify the problem</li>
+          <li>Check simple causes first</li>
+          <li>Restart or reconnect devices when appropriate</li>
+          <li>Review error messages</li>
+          <li>Test one change at a time</li>
+          <li>Document the solution</li>
+        </ul>
       </section>
 
       <section class="card">
         <h2>Beginner Tips</h2>
-        <p>
-          Start by learning how computers work, then move into networking and operating systems.
-          Focus on understanding the “why” behind each concept, not just memorizing terms.
-          Hands-on practice, such as using virtual machines or home labs, can help build confidence.
-        </p>
+        <div class="grid">
+          <div class="mini-card">
+            <h3>Practice Hands-On</h3>
+            <p>Use old computers, virtual machines, or online labs to build real experience.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Learn the Why</h3>
+            <p>Do not only memorize terms. Try to understand why each concept matters.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Build Step by Step</h3>
+            <p>Start with hardware and software, then move into networking and security.</p>
+          </div>
+        </div>
       </section>
+
     </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>Created for my semester project.</p>
+      <p>IT & Cybersecurity Resource Hub | Project 02 Final MVP</p>
     </div>
   </footer>
 
@@ -107,5 +153,6 @@
       }
     });
   </script>
+
 </body>
 </html>
