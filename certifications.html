@@ -21,7 +21,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="fundamentals.html">IT Fundamentals</a></li>
         <li><a href="cybersecurity.html">Cybersecurity Basics</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="certifications.html" class="active">Certifications</a></li>
       </ul>
       <button id="theme-toggle">Toggle Dark Mode</button>
     </div>
@@ -30,10 +30,14 @@
   <main>
     <div class="container">
 
+      <!-- SEARCH/FILTER -->
       <section class="card">
         <h2>Find Certifications</h2>
+
         <p>
           Search like Ctrl+F or filter by level and category to find certifications that match your goals.
+          These filters are designed to help beginners quickly explore certifications based on career interests,
+          technical skill level, and different areas of IT and cybersecurity.
         </p>
 
         <input 
@@ -44,8 +48,10 @@
         >
 
         <div class="filter-row">
+
           <div>
             <label for="levelFilter">Level</label>
+
             <select id="levelFilter" class="filter-select">
               <option value="all">All Levels</option>
               <option value="beginner">Beginner</option>
@@ -55,6 +61,7 @@
 
           <div>
             <label for="categoryFilter">Category</label>
+
             <select id="categoryFilter" class="filter-select">
               <option value="all">All Categories</option>
               <option value="support">IT Support</option>
@@ -64,103 +71,232 @@
               <option value="linux">Linux</option>
             </select>
           </div>
+
         </div>
       </section>
 
+      <!-- COMPTIA A+ -->
       <section class="card cert-item" data-level="beginner" data-category="support">
         <h2>CompTIA A+</h2>
+
         <div class="tag-row">
           <span class="tag">Beginner</span>
           <span class="tag">IT Support</span>
         </div>
-        <p>CompTIA A+ is one of the most widely recognized entry-level IT certifications. It covers core concepts such as hardware components, operating systems, troubleshooting, mobile devices, and basic networking. This certification is ideal for beginners looking to start a career in IT support, help desk, or technical support roles. It provides a strong foundation for understanding how computer systems function and how to resolve common technical issues.</p>
+
+        <p>
+          CompTIA A+ is one of the most widely recognized entry-level IT certifications. It covers
+          core concepts such as hardware components, operating systems, troubleshooting, mobile devices,
+          and basic networking.
+        </p>
+
+        <p>
+          This certification is ideal for beginners looking to start a career in IT support,
+          help desk, or technical support roles. It provides a strong foundation for understanding
+          how computer systems function and how to resolve common technical issues.
+        </p>
       </section>
 
+      <!-- NETWORK+ -->
       <section class="card cert-item" data-level="beginner" data-category="networking">
         <h2>CompTIA Network+</h2>
+
         <div class="tag-row">
           <span class="tag">Beginner</span>
           <span class="tag">Networking</span>
         </div>
-        <p>CompTIA Network+ focuses on the fundamentals of networking, including IP addressing, routing, switching, network security, and troubleshooting connectivity issues. It helps learners understand how devices communicate across networks and how to maintain reliable connections. This certification is valuable for individuals interested in networking roles or building a deeper understanding of infrastructure that supports modern IT systems.</p>
+
+        <p>
+          CompTIA Network+ focuses on the fundamentals of networking, including IP addressing,
+          routing, switching, network security, and troubleshooting connectivity issues.
+        </p>
+
+        <p>
+          It helps learners understand how devices communicate across networks and how to maintain
+          reliable connections. This certification is valuable for individuals interested in networking
+          roles or building a deeper understanding of infrastructure that supports modern IT systems.
+        </p>
       </section>
 
+      <!-- SECURITY+ -->
       <section class="card cert-item" data-level="beginner" data-category="security">
         <h2>CompTIA Security+</h2>
+
         <div class="tag-row">
           <span class="tag">Beginner</span>
           <span class="tag">Security</span>
         </div>
-        <p>CompTIA Security+ is a foundational cybersecurity certification that introduces concepts such as threats, vulnerabilities, risk management, identity and access control, and network security. It emphasizes real-world security practices and prepares learners to protect systems and data from cyber threats. This certification is commonly used as a starting point for cybersecurity careers and is often required for entry-level security roles.</p>
+
+        <p>
+          CompTIA Security+ is a foundational cybersecurity certification that introduces concepts
+          such as threats, vulnerabilities, risk management, identity and access control,
+          and network security.
+        </p>
+
+        <p>
+          It emphasizes real-world security practices and prepares learners to protect systems
+          and data from cyber threats. This certification is commonly used as a starting point
+          for cybersecurity careers and is often required for entry-level security roles.
+        </p>
       </section>
 
+      <!-- CCNA -->
       <section class="card cert-item" data-level="advanced" data-category="networking">
         <h2>Cisco CCNA</h2>
+
         <div class="tag-row">
           <span class="tag">Advanced</span>
           <span class="tag">Networking</span>
         </div>
-        <p>The Cisco Certified Network Associate (CCNA) certification focuses on networking fundamentals, including routing, switching, IP services, network security basics, and automation. It is more advanced than beginner certifications and requires a deeper understanding of how networks operate. CCNA is highly respected in the industry and is ideal for individuals pursuing careers in networking, infrastructure, or system administration.</p>
+
+        <p>
+          The Cisco Certified Network Associate (CCNA) certification focuses on networking fundamentals,
+          including routing, switching, IP services, network security basics, and automation.
+        </p>
+
+        <p>
+          It is more advanced than beginner certifications and requires a deeper understanding
+          of how networks operate. CCNA is highly respected in the industry and is ideal for
+          individuals pursuing careers in networking, infrastructure, or system administration.
+        </p>
       </section>
 
+      <!-- LINUX+ -->
       <section class="card cert-item" data-level="advanced" data-category="linux">
         <h2>CompTIA Linux+</h2>
+
         <div class="tag-row">
           <span class="tag">Advanced</span>
           <span class="tag">Linux</span>
         </div>
-        <p>CompTIA Linux+ covers Linux operating system administration, including command-line usage, file systems, permissions, system configuration, and troubleshooting. It is particularly useful for individuals interested in working with servers, cybersecurity environments, or cloud systems where Linux is commonly used. This certification builds strong technical skills that are highly valued in many IT roles.</p>
-      </section>
 
-      <section class="card cert-item" data-level="beginner" data-category="cloud">
-        <h2>Microsoft Azure Fundamentals</h2>
-        <div class="tag-row">
-          <span class="tag">Beginner</span>
-          <span class="tag">Cloud</span>
-        </div>
-        <p>Microsoft Azure Fundamentals introduces cloud computing concepts and provides an overview of Microsoft Azure services, pricing models, identity management, and security features. It is designed for beginners who want to understand how cloud platforms operate and how businesses use cloud services. This certification is a great starting point for anyone interested in cloud computing or modern IT infrastructure.</p>
-      </section>
-
-      <section class="card cert-item" data-level="beginner" data-category="cloud">
-        <h2>AWS Certified Cloud Practitioner</h2>
-        <div class="tag-row">
-          <span class="tag">Beginner</span>
-          <span class="tag">Cloud</span>
-        </div>
-        <p>The AWS Certified Cloud Practitioner certification focuses on foundational cloud concepts, including AWS services, cloud architecture, pricing, billing, and security. It is an entry-level certification that helps learners understand how cloud computing works and how organizations use AWS to build scalable systems. It is ideal for beginners exploring cloud careers or supporting cloud-based environments.</p>
-      </section>
-
-      <section class="card cert-item" data-level="beginner" data-category="security">
-        <h2>ISC2 Certified in Cybersecurity</h2>
-        <div class="tag-row">
-          <span class="tag">Beginner</span>
-          <span class="tag">Security</span>
-        </div>
-        <p>The ISC2 Certified in Cybersecurity certification provides an introduction to core cybersecurity concepts such as security principles, access control, network security, incident response, and security operations. It is designed for individuals who are new to cybersecurity and want a structured starting point. This certification helps build foundational knowledge needed for more advanced security certifications and roles.</p>
-      </section>
-
-      <section class="card cert-item" data-level="beginner" data-category="support">
-        <h2>Google IT Support Professional Certificate</h2>
-        <div class="tag-row">
-          <span class="tag">Beginner</span>
-          <span class="tag">IT Support</span>
-        </div>
-        <p>A strong beginner path typically starts with CompTIA A+ or the Google IT Support Professional Certificate to build basic technical knowledge. From there, learners can move into Network+ to understand how systems communicate and then Security+ or ISC2 Certified in Cybersecurity to develop security awareness. For those interested in cloud computing, adding certifications like AWS Cloud Practitioner or Azure Fundamentals can further expand career opportunities. This structured approach helps build knowledge step by step without becoming overwhelming.</p>
-      </section>
-
-      <section class="card cert-item" data-level="beginner" data-category="security">
-        <h2>Recommended Beginner Path</h2>
-        <div class="tag-row">
-          <span class="tag">Beginner</span>
-          <span class="tag">Security</span>
-          <span class="tag">IT Support</span>
-        </div>
         <p>
-          Start with A+ or Google IT Support, move to Network+, then Security+. Add cloud certifications
-          like AWS or Azure depending on your career goals.
+          CompTIA Linux+ covers Linux operating system administration, including command-line usage,
+          file systems, permissions, system configuration, and troubleshooting.
+        </p>
+
+        <p>
+          It is particularly useful for individuals interested in working with servers,
+          cybersecurity environments, or cloud systems where Linux is commonly used.
+          This certification builds strong technical skills that are highly valued in many IT roles.
         </p>
       </section>
 
+      <!-- AZURE -->
+      <section class="card cert-item" data-level="beginner" data-category="cloud">
+        <h2>Microsoft Azure Fundamentals</h2>
+
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Cloud</span>
+        </div>
+
+        <p>
+          Microsoft Azure Fundamentals introduces cloud computing concepts and provides an overview
+          of Microsoft Azure services, pricing models, identity management, and security features.
+        </p>
+
+        <p>
+          It is designed for beginners who want to understand how cloud platforms operate
+          and how businesses use cloud services. This certification is a strong starting point
+          for learners interested in cloud computing or modern IT infrastructure.
+        </p>
+      </section>
+
+      <!-- AWS -->
+      <section class="card cert-item" data-level="beginner" data-category="cloud">
+        <h2>AWS Certified Cloud Practitioner</h2>
+
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Cloud</span>
+        </div>
+
+        <p>
+          The AWS Certified Cloud Practitioner certification focuses on foundational cloud concepts,
+          including AWS services, cloud architecture, pricing, billing, and security.
+        </p>
+
+        <p>
+          It is an entry-level certification that helps learners understand how cloud computing works
+          and how organizations use AWS to build scalable systems. It is ideal for beginners exploring
+          cloud careers or supporting cloud-based environments.
+        </p>
+      </section>
+
+      <!-- ISC2 -->
+      <section class="card cert-item" data-level="beginner" data-category="security">
+        <h2>ISC2 Certified in Cybersecurity</h2>
+
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Security</span>
+        </div>
+
+        <p>
+          The ISC2 Certified in Cybersecurity certification provides an introduction to core
+          cybersecurity concepts such as security principles, access control, network security,
+          incident response, and security operations.
+        </p>
+
+        <p>
+          It is designed for individuals who are new to cybersecurity and want a structured
+          starting point. This certification helps build foundational knowledge needed for
+          more advanced security certifications and roles.
+        </p>
+      </section>
+
+      <!-- GOOGLE IT -->
+      <section class="card cert-item" data-level="beginner" data-category="support">
+        <h2>Google IT Support Professional Certificate</h2>
+
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">IT Support</span>
+        </div>
+
+        <p>
+          The Google IT Support Professional Certificate is a beginner-friendly program that introduces
+          learners to troubleshooting, customer support, networking, operating systems,
+          system administration, and security basics.
+        </p>
+
+        <p>
+          It is useful for people who are new to IT and want a structured introduction to
+          technical support roles. This certificate can also help learners build confidence
+          before moving into certifications like CompTIA A+, Network+, or Security+.
+        </p>
+      </section>
+
+      <!-- BEGINNER PATH -->
+      <section class="card">
+        <h2>Recommended Beginner Path</h2>
+
+        <div class="tag-row">
+          <span class="tag">Beginner</span>
+          <span class="tag">Security</span>
+          <span class="tag">IT Support</span>
+        </div>
+
+        <p>
+          A strong beginner path typically starts with CompTIA A+ or the Google IT Support
+          Professional Certificate to build basic technical knowledge.
+        </p>
+
+        <p>
+          From there, learners can move into Network+ to understand how systems communicate
+          and then Security+ or ISC2 Certified in Cybersecurity to develop security awareness.
+          For those interested in cloud computing, adding certifications like AWS Cloud Practitioner
+          or Azure Fundamentals can further expand career opportunities.
+        </p>
+
+        <p>
+          This structured approach helps learners build knowledge step by step without becoming
+          overwhelmed while also creating a strong foundation for future specialization.
+        </p>
+      </section>
+
+      <!-- NO RESULTS -->
       <section id="noResults" class="card" style="display:none;">
         <h2>No Results Found</h2>
         <p>Try changing your search term, level, or category filter.</p>
@@ -171,7 +307,7 @@
 
   <footer>
     <div class="container">
-      <p>Created for my semester project.</p>
+      <p>IT & Cybersecurity Resource Hub | Project 02 Final MVP</p>
     </div>
   </footer>
 
@@ -202,6 +338,7 @@
       const searchTerm = searchInput.value.toLowerCase();
       const selectedLevel = levelFilter.value;
       const selectedCategory = categoryFilter.value;
+
       let visibleCount = 0;
 
       certItems.forEach(item => {
